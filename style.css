@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --cor-primaria:#000000;
+    --cor-secundaria:#F6F6F6;
+    --cor-terciaria:#22D4FD;
+    --cor-hover:#272727;
+
+    --fonte-primaria:'Krona One', sans-serif;
+    --fonte-secundaria:'Montserrat', sans-serif;
+}
+
+.menu{
+    position: relative;
+    width: auto;
+    margin: 0 10px 0 0;    
+}
+
+body{
+    background-color: var(--cor-primaria);
+    height: 100vh;
+    box-sizing: border-box;
+    color: var(--cor-secundaria);
+}
+
+.cabecalho{
+    padding: 2% 0 0 5%;
+    display: flex;
+    align-items: center;
+    gap: 120px;
+}
+
+.titulo-principal{
+    padding: 5% 15%;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--cor-terciaria);
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 20px;
+}
+
+.cabecalho__menu__link{
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.cabecalho__menu__link:hover{
+    background-color: gray;
+    font-size: 1.6rem;
+    color: var(--cor-terciaria);
+}
+
+.texto-imagem,.imagem-texto{
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:40px;
+        
+}
+
+
+
+.textos{
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;/*espaçamento entre os elementos*/
+    text-align: left;
+    
+}
+
+.titulo{
+    color: var(--cor-terciaria);
+    font-size: 2.25rem;
+}
+
+.textos{
+    color: var(--cor-secundaria);
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.botao{
+    display: flex;
+    justify-content: center;/*icone e texto para o centro*/
+    gap: 16px;
+    border: 2px solid var(--cor-terciaria);/*largura,tracejado,cor da borda*/
+    width: 50%;/*largura do botão*/
+    text-align: center;
+    border-radius: 16px;
+    font-size: 1.5rem;
+    font-weight: 600;/*peso da fonte*/
+    padding: 21.5px 0 ;/*primeiro valor vertical segundo horizontal*/
+    text-decoration: none;/*retira o linha inferior do link*/
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+}
+
+.botao:hover{
+    background-color: var(--cor-hover);
+    font-size: 2.5rem;
+    color: var(--cor-terciaria);
+}
